@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creamy Mini Collection</title>
+        <style>
+            body {
+                background-color: rgb(255, 202, 223);
+                padding-left: 251px;
+                padding-top: 110px;
+                padding-right: 20px;
+            }
+
+            .header {
+                background-color: pink;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 50px;
+                text-align: center;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: gray;
+                padding-bottom: 10px;
+                z-index: 3;
+            }
+
+            .categories
+            {
+                background-color: rgb(255, 202, 211);
+                position: fixed;
+                top: 61px;
+                left: 220px;
+                right: 0;
+                height: 25px;
+                text-align: center;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: gray;
+                padding-bottom: 10px;
+                z-index: 3; 
+            }
+
+            .header h1 {
+                position: relative;
+                left: 100px;
+            }
+
+            .sidebar {
+                background-color: pink;
+                color: white;
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                top: 60px;
+                width: 220px;
+                border-style: solid;
+                border-color: gray;
+                border-width: 1px;
+                z-index: 3;
+            }
+
+            .item_showcase{
+                border-style: solid;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+            }
+
+            .product {
+                position: relative;
+                width: 90%;
+                border-style: solid;
+                margin: auto;
+                overflow: hidden;
+                display: flex;
+                align-items: flex-end
+                }
+            
+            .product img {
+                width: 100%;
+                height: auto;
+                display: block;
+                top: 0;
+                left: 0;
+                opacity: 1;
+                transition: opacity 0.3s ease;
+                z-index: 1;
+            }
+
+            .product .thumbnails_hover {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                display: none;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                z-index: 2;
+            }
+
+            .product:hover .thumbnails_hover {
+                display: block;
+                opacity: 1;
+            }
+
+
+            .item_name {
+                font-size: 20px;
+                margin: 1px;
+                margin-top: 10px;
+            }
+
+            .item_price {
+                font-size: 20px;
+                margin: 1px;
+            }
+
+            .product-grid {
+                display: grid;
+                grid-template-columns: repeat(5, minmax(200px, 1fr));
+                column-gap: 20px;
+                row-gap: 30px;
+    
+            }
+
+            .categories_grid {
+                display: grid;
+                grid-template-columns: repeat(5, minmax(50px, 1fr));
+                z-index: 3;
+            }
+
+            .text {
+                align-self: flex-end;
+                align-self: center;
+            }
+
+            a:link {
+                color: black;
+            }
+
+            a:visited {
+                color: black;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Creamy Mini Collection</h1>
+        </div>
+
+        <div class="categories">
+            <div class="categories_grid">
+                <p><a href="./Creamy_sale.html">Featured</a></p>
+                <p>Skirt</p>
+                <p>Jewelry</p>
+                <p>Top</p>
+                <p>Sale</p>
+            </div>
+        </div>
+            
+
+        <div class="sidebar">
+            <div>
+                <p style="font-size:xx-large; margin-bottom: 10px;">Wechat</p>
+                <img style="width: 200px; display: block; margin-left: auto; margin-right: auto;" src="thumbnails/QR.png">
+            </div>
+            
+        </div>
+
+        
+
+        
+        <div class="product-grid">
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="thumbnails/item_8.jpg">
+                    <img class ="thumbnails_hover" src="thumbnails/item_2.jpg">
+                </div>
+                <div class="text"> 
+                    <p class = "item_name"> item description</p>
+                
+                    <p class="item_price">$100</p>
+                </div>
+            </div>
+        
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="thumbnails/item_3.jpg">
+                </div>
+                <div class="text">
+                    <p class = "item_name"> item description</p>
+        
+                    <p class="item_price">$100</p>
+                </div>     
+            </div>
+    
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="thumbnails/item_4.jpg">
+                    <img class ="thumbnails_hover" src="thumbnails/item_4_1.jpg">
+                </div>
+                 
+                <div class="text">
+                    <p class = "item_name"> item description</p>
+        
+                    <p class="item_price">$100</p>
+                </div>
+                
+            </div>
+    
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="thumbnails/item_5.jpg">
+                </div>
+                 
+                <div class="text">
+                    <p class = "item_name"> item description</p>
+        
+                    <p class="item_price">$100</p>
+                </div>
+                
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="thumbnails/item_7.jpg">
+                    <img class ="thumbnails_hover" src="thumbnails/item_9.jpg">
+                </div>
+                
+                <div class="text">
+                    <p class = "item_name"> item description</p>
+        
+                    <p class="item_price">$100</p>
+                </div>
+                
+            </div>
+    
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="thumbnails/item_6.jpg">
+                    <img class ="thumbnails_hover" src="thumbnails/item_8.jpg">
+                </div>
+                 
+                <div class="text">
+                    <p class = "item_name"> item description</p>
+        
+                    <p class="item_price">$100</p>
+                </div>
+                
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="thumbnails/item_7.jpg">
+                    <img class ="thumbnails_hover" src="thumbnails/item_9.jpg">
+                </div>
+                
+                <div class="text">
+                    <p class = "item_name"> item description</p>
+        
+                    <p class="item_price">$100</p>
+                </div>
+                
+            </div>
+    
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="thumbnails/item_6.jpg">
+                    <img class ="thumbnails_hover" src="thumbnails/item_8.jpg">
+                </div>
+                 
+                <div class="text">
+                    <p class = "item_name"> item description</p>
+        
+                    <p class="item_price">$100</p>
+                </div>
+                
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="thumbnails/item_7.jpg">
+                    <img class ="thumbnails_hover" src="thumbnails/item_9.jpg">
+                </div>
+                
+                <div class="text">
+                    <p class = "item_name"> item description</p>
+        
+                    <p class="item_price">$100</p>
+                </div>
+                
+            </div>
+    
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="thumbnails/item_6.jpg">
+                    <img class ="thumbnails_hover" src="thumbnails/item_8.jpg">
+                </div>
+                 
+                <div class="text">
+                    <p class = "item_name"> item description</p>
+        
+                    <p class="item_price">$100</p>
+                </div>
+                
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="thumbnails/item_7.jpg">
+                    <img class ="thumbnails_hover" src="thumbnails/item_9.jpg">
+                </div>
+                
+                <div class="text">
+                    <p class = "item_name"> item description</p>
+        
+                    <p class="item_price">$100</p>
+                </div>
+                
+            </div>
+    
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="thumbnails/item_6.jpg">
+                    <img class ="thumbnails_hover" src="thumbnails/item_8.jpg">
+                </div>
+                 
+                <div class="text">
+                    <p class = "item_name"> item description</p>
+        
+                    <p class="item_price">$100</p>
+                </div>
+                
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="thumbnails/item_7.jpg">
+                    <img class ="thumbnails_hover" src="thumbnails/item_9.jpg">
+                </div>
+                
+                <div class="text">
+                    <p class = "item_name"> item description</p>
+        
+                    <p class="item_price">$100</p>
+                </div>
+                
+            </div>
+    
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="thumbnails/item_6.jpg">
+                    <img class ="thumbnails_hover" src="thumbnails/item_8.jpg">
+                </div>
+                 
+                <div class="text">
+                    <p class = "item_name"> item description</p>
+        
+                    <p class="item_price">$100</p>
+                </div>
+                
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="thumbnails/item_6.jpg">
+                    <img class ="thumbnails_hover" src="thumbnails/item_8.jpg">
+                </div>
+                 
+                <div class="text">
+                    <p class = "item_name"> item description</p>
+        
+                    <p class="item_price">$100</p>
+                </div>
+                
+            </div>
+    
+            
+
+        </div>  
+             
+    
+    </body>
+</html>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Vanboutique</title>
+        <title>Creamy Mini Collection</title>
         <style>
             body {
                 background-color: rgb(255, 202, 223);
                 padding-left: 251px;
-                padding-top: 70px;
+                padding-top: 110px;
                 padding-right: 20px;
             }
 
@@ -23,6 +23,22 @@
                 border-bottom-color: gray;
                 padding-bottom: 10px;
                 z-index: 3;
+            }
+
+            .categories
+            {
+                background-color: rgb(255, 202, 211);
+                position: fixed;
+                top: 61px;
+                left: 220px;
+                right: 0;
+                height: 25px;
+                text-align: center;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: gray;
+                padding-bottom: 10px;
+                z-index: 3; 
             }
 
             .header h1 {
@@ -110,9 +126,23 @@
     
             }
 
+            .categories_grid {
+                display: grid;
+                grid-template-columns: repeat(5, minmax(50px, 1fr));
+                z-index: 3;
+            }
+
             .text {
                 align-self: flex-end;
                 align-self: center;
+            }
+
+            a:link {
+                color: black;
+            }
+
+            a:visited {
+                color: black;
             }
 
         </style>
@@ -120,16 +150,29 @@
 
     <body>
         <div class="header">
-            <h1>creamy mini collection</h1>
+            <h1>Creamy Mini Collection</h1>
         </div>
+
+        <div class="categories">
+            <div class="categories_grid">
+                <p><a href="./Creamy_sale.html">Featured</a></p>
+                <p>Skirt</p>
+                <p>Jewelry</p>
+                <p>Top</p>
+                <p>Sale</p>
+            </div>
+        </div>
+            
 
         <div class="sidebar">
             <div>
-                <p>Wechat</p>
+                <p style="font-size:xx-large; margin-bottom: 10px;">Wechat</p>
                 <img style="width: 200px; display: block; margin-left: auto; margin-right: auto;" src="thumbnails/QR.png">
             </div>
             
         </div>
+
+        
 
         
         <div class="product-grid">
