@@ -10,6 +10,10 @@
                 padding-left: 251px;
                 padding-top: 150px;
                 padding-right: 20px;
+
+                touch-action: manipulation;
+                user-select: none;
+                zoom: reset;
             }
 
             .header {
@@ -24,7 +28,7 @@
                 border-bottom-style: solid;
                 border-bottom-color: gray;
                 padding-bottom: 10px;
-                z-index: 3;
+                z-index: 4;
 
                 font-family: 'Allan';
                 font-size: xx-large;
@@ -34,12 +38,13 @@
             {
                 background-color: rgb(255, 202, 211);
                 position: fixed;
-                top: 82px;
+                top: 80px;
                 left: 220px;
                 right: 0;
                 height: 25px;
                 text-align: center;
                 border-bottom-width: 1px;
+                border-top-width: 1px;
                 border-bottom-style: solid;
                 border-bottom-color: gray;
                 padding-bottom: 20px;
@@ -129,7 +134,7 @@
 
             .product-grid {
                 display: grid;
-                grid-template-columns: repeat(5, minmax(200px, 1fr));
+                grid-template-columns: repeat(4, minmax(200px, 1fr));
                 column-gap: 20px;
                 row-gap: 30px;
     
@@ -142,8 +147,8 @@
             }
 
             .text {
-                align-self: flex-end;
-                align-self: center;
+                text-align: left;
+                width: 100%;
             }
 
             a:link {
@@ -188,80 +193,238 @@
         <div class="product-grid">
             <div class = "item_showcase">
                 <div class = "product"> 
-                    <img class ="thumbnails" src="Featured/Featured/item_1.jpg">
-                    <img class ="thumbnails_hover" src="Featured/Featured/item_2.jpg">
+                    <img class ="thumbnails" src="sale/Sale/Image_20230712140312.jpg">
+                </div>
+                <div class="text"> 
+                    <p class = "item_name"> item description</p>
+                
+                    <p class="item_price">$22</p>
+                </div>
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="sale/Sale (2)/Image_20230715172834.jpg">
+                </div>
+                <div class="text"> 
+                    <p class = "item_name"> item description</p>
+                
+                    <p class="item_price">$35</p>
+                </div>
+            </div>
+        
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="sale/Sale (3)/Image_20230715172839.jpg">
+                    <img class ="thumbnails_hover" src="sale/Sale (3)/Image_20230715172842.jpg">
+                </div>
+                <div class="text">
+                    <p class = "item_name"> item description</p>
+        
+                    <p class="item_price">$38</p>
+                </div>     
+            </div>
+    
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="sale/Sale (4)/Image_20230715172847.jpg">
+                    <img class ="thumbnails_hover" src="sale/Sale (4)/Image_20230715172850.jpg">
+                </div>
+                 
+                <div class="text">
+                    <p class = "item_name"> item description</p>
+        
+                    <p class="item_price">$25</p>
+                </div>
+                
+            </div>
+    
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="sale/Sale (5)/Image_20230715172854.jpg">
+                    <img class ="thumbnails_hover" src="sale/Sale (5)/Image_20230715172857.jpg">
+                </div>
+                 
+                <div class="text">
+                    <p class = "item_name"> item description</p>
+        
+                    <p class="item_price">$19.99</p>
+                </div>
+                
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="sale/Sale (6)/Image_20230715172900.jpg">
+                    <img class ="thumbnails_hover" src="sale/Sale (6)/Image_20230715172903.jpg">
+                </div>
+                
+                <div class="text">
+                    <p class = "item_name"> Bottom</p>
+        
+                    <p class="item_price">$28</p>
+                </div>
+                
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="sale/Sale (7)/Image_20230715172906.jpg">
+                    <img class ="thumbnails_hover" src="sale/Sale (7)/Image_20230715172909.jpg">
+                </div>
+                
+                <div class="text">
+                    <p class = "item_name"> Top</p>
+        
+                    <p class="item_price">$34.99</p>
+                </div>
+                
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="sale/Sale (8)/Image_20230715172912.jpg">
+                    <img class ="thumbnails_hover" src="sale/Sale (8)/Image_20230715172915.jpg">
+                </div>
+                <div class="text"> 
+                    <p class = "item_name"> item description</p>
+                
+                    <p class="item_price">$25</p>
+                </div>
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="sale/Sale (9)/Image_20230715172924.jpg">
+                </div>
+                <div class="text"> 
+                    <p class = "item_name"> item description</p>
+                
+                    <p class="item_price">$15</p>
+                </div>
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="sale/Sale (10)/Image_20230715172931.jpg">
+                </div>
+                <div class="text"> 
+                    <p class = "item_name"> Top</p>
+                
+                    <p class="item_price">$25</p>
+                </div>
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="sale/Sale (11)/Image_20230715172935.jpg">
+                </div>
+                <div class="text"> 
+                    <p class = "item_name"> Top</p>
+                
+                    <p class="item_price">$25</p>
+                </div>
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="sale/Sale (12)/Image_20230715172939.jpg">
+                </div>
+                <div class="text"> 
+                    <p class = "item_name"> Tank-Top</p>
+                
+                    <p class="item_price">$15</p>
+                </div>
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="sale/Sale (13)/Image_20230715172942.jpg">
+                </div>
+                <div class="text"> 
+                    <p class = "item_name"> OL Top</p>
+                
+                    <p class="item_price">$35</p>
+                </div>
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="sale/Sale (14)/Image_20230715172945.jpg">
+                </div>
+                <div class="text"> 
+                    <p class = "item_name"> item description</p>
+                
+                    <p class="item_price">$35</p>
+                </div>
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="sale/Sale (15)/Image_20230715172948.jpg">
+                </div>
+                <div class="text"> 
+                    <p class = "item_name"> item description</p>
+                
+                    <p class="item_price">$19.99</p>
+                </div>
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="sale/Sale (16)/Image_20230715172952.jpg">
+                </div>
+                <div class="text"> 
+                    <p class = "item_name"> Top + Skirt</p>
+                
+                    <p class="item_price">$99</p>
+                </div>
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="sale/Sale (17)/Image_20230715172954.jpg">
+                </div>
+                <div class="text"> 
+                    <p class = "item_name"> Top</p>
+                
+                    <p class="item_price">$10</p>
+                </div>
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="sale/Sale (18)/Image_20230715172957.jpg">
+                    <img class ="thumbnails_hover" src="sale/Sale (18)/Image_20230715173000.jpg">
+                </div>
+                <div class="text"> 
+                    <p class = "item_name"> Top</p>
+                
+                    <p class="item_price">$35</p>
+                </div>
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="sale/Sale (19)/Image_20230715173003.jpg">
+                </div>
+                <div class="text"> 
+                    <p class = "item_name"> Jacket</p>
+                
+                    <p class="item_price">$35</p>
+                </div>
+            </div>
+
+            <div class = "item_showcase">
+                <div class = "product"> 
+                    <img class ="thumbnails" src="sale/Sale (20)/Image_20230715173010.jpg">
+                    <img class ="thumbnails_hover" src="sale/Sale (20)/Image_20230715173013.jpg">
                 </div>
                 <div class="text"> 
                     <p class = "item_name"> item description</p>
                 
                     <p class="item_price">$100</p>
                 </div>
-            </div>
-        
-            <div class = "item_showcase">
-                <div class = "product"> 
-                    <img class ="thumbnails" src="Featured/Featured (2)/item_3.jpg">
-                </div>
-                <div class="text">
-                    <p class = "item_name"> item description</p>
-        
-                    <p class="item_price">$100</p>
-                </div>     
-            </div>
-    
-            <div class = "item_showcase">
-                <div class = "product"> 
-                    <img class ="thumbnails" src="Featured/Featured (3)/item_4.jpg">
-                    <img class ="thumbnails_hover" src="Featured/Featured (3)/item_4_1.jpg">
-                </div>
-                 
-                <div class="text">
-                    <p class = "item_name"> item description</p>
-        
-                    <p class="item_price">$100</p>
-                </div>
-                
-            </div>
-    
-            <div class = "item_showcase">
-                <div class = "product"> 
-                    <img class ="thumbnails" src="Featured/Featured (4)/item_5.jpg">
-                </div>
-                 
-                <div class="text">
-                    <p class = "item_name"> item description</p>
-        
-                    <p class="item_price">$100</p>
-                </div>
-                
-            </div>
-
-            <div class = "item_showcase">
-                <div class = "product"> 
-                    <img class ="thumbnails" src="Featured/Featured (5)/item_7.jpg">
-                    <img class ="thumbnails_hover" src="Featured/Featured (5)/item_9.jpg">
-                </div>
-                
-                <div class="text">
-                    <p class = "item_name"> item description</p>
-        
-                    <p class="item_price">$100</p>
-                </div>
-                
-            </div>
-
-            <div class = "item_showcase">
-                <div class = "product"> 
-                    <img class ="thumbnails" src="Featured/Featured (6)/item_6.jpg">
-                    <img class ="thumbnails_hover" src="Featured/Featured (6)/item_8.jpg">
-                </div>
-                
-                <div class="text">
-                    <p class = "item_name"> item description</p>
-        
-                    <p class="item_price">$100</p>
-                </div>
-                
             </div>
 
         </div>  
